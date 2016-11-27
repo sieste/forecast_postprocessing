@@ -39,7 +39,7 @@ library(deSolve)
 l63 = function(t, state, parms=NA) {
   list(c(
     10 * (state['Y'] - state['X']),  
-    state['X'] * state['Z'] * (-1) + 28 * state['X'] - state['Y'], 
+    -1 * state['X'] * state['Z'] + 28 * state['X'] - state['Y'], 
     state['X'] * state['Y'] - 8 / 3 * state['Z'])
   )
 }
